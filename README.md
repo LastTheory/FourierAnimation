@@ -11,7 +11,7 @@ Simple Python package script for animating the reconstruction of any contour wit
 import FourierAnimation as fa
 import cv2
 
-contour = <your n x 2 array of (x, y) contour points>
+contour = <your n x 2 array of ordered (x, y) contour points>
 imshape = <(h x w) size of output image>
 c, nlist = fa.calculateFourierSeries(contour, nvec=100) #calculate Fourier coefficients
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
