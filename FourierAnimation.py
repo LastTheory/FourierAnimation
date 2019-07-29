@@ -38,7 +38,7 @@ def spline_func(x, y, periodic=False):
     return spline
 
 # for a function f(t) of points, computes the complex Fourier coefficients
-# pts: list of  ordered points (n x 2) that define your curve
+# pts: numpy array of ordered points (n x 2) that define your curve
 # nvec: number of Fourier components to calculate. Accuracy and computational complexity increases with this
 # nt: number of sample points for spline. The higher this is, the more accurate the coefficients will be
 # returns: Fourier coefficients, corresponding n for each coefficient (from -nvec to nvec)
@@ -133,7 +133,7 @@ def animate(c, nlist, imshape, animtime=1e3, ptdensity=200, display=True, save=F
 # import cv2
 #
 # contour = <your n x 2 array of (x, y) contour points>
-# imshape = <size of output image>
+# imshape = <(h x w) size of output image>
 # c, nlist = fa.calculateFourierSeries(contour, nvec=100) #calculate Fourier coefficients
 # fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 # out = cv2.VideoWriter('fourier.avi', fourcc, 30, (imshape[1], imshape[0])) #video writer
