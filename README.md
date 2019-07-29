@@ -19,7 +19,7 @@ out = cv2.VideoWriter('fourier.avi', fourcc, 30, (imshape[1], imshape[0])) #vide
 fa.animate(c, nlist, imshape, save=True, vidwriter=out)
 ```
 ## Demo
-Watch [here](https://www.youtube.com/phortissimo) for demo performance on complex and simple contours.
+Watch [here](https://youtu.be/rcA26UL32Pc) for demo performance on complex and simple contours.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
