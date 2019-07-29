@@ -12,7 +12,7 @@ import FourierAnimation as fa
 import cv2
 
 contour = <your n x 2 array of (x, y) contour points>
-imshape = <size of output image>
+imshape = <(h x w) size of output image>
 c, nlist = fa.calculateFourierSeries(contour, nvec=100) #calculate Fourier coefficients
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 out = cv2.VideoWriter('fourier.avi', fourcc, 30, (imshape[1], imshape[0])) #video writer
