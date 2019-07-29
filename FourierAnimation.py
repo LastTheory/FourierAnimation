@@ -1,6 +1,6 @@
 ###################################################
 # Creates an animation of a complex Fourier series reconstruction of a contour.
-# See demo: https://www.youtube.com/phortissimo
+# See demo: https://youtu.be/rcA26UL32Pc
 # Example code usage at bottom
 #
 # Copyright (c) 2019 Last Theory Productions, LLC
